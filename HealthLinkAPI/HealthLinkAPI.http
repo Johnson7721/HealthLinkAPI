@@ -1,0 +1,21 @@
+@HealthLinkAPI_HostAddress = https://localhost:7101
+
+GET {{HealthLinkAPI_HostAddress}}/doctors
+Accept: application/json
+
+###
+
+GET {{HealthLinkAPI_HostAddress}}/consultations
+Accept: application/json
+
+###
+
+POST {{HealthLinkAPI_HostAddress}}/consultations
+Content-Type: application/json
+
+{
+  "doctorId": "7fb7f3e7-87c0-4f33-9b0c-20fd59260102",
+  "consultationType": "Video",
+  "preferredDateTime": "2030-06-15T10:30:00Z",
+  "reasonForVisit": "I'd like to discuss a recurring headache."
+}
